@@ -1,0 +1,36 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Amluto.Steps
+PackageVersion: 0.4.2
+PackageLocale: en-GB
+Publisher: Amluto Solutions Ltd
+PublisherUrl: https://steps.amluto.com/
+PublisherSupportUrl: https://steps.amluto.com/it/
+PrivacyUrl: https://privacy.amluto.com/
+Author: Amluto Solutions Ltd
+PackageName: Steps by Amluto
+PackageUrl: https://steps.amluto.com/
+License: Proprietary
+Copyright: © 2026 Amluto Solutions Ltd
+ShortDescription: Record a task click by click and turn it into a branded step-by-step guide.
+Description: Steps records clicks and screenshots while you work, then turns them into an editable step-by-step guide you can export as PDF, Word or an interactive walkthrough. Blur, crop and annotate the screenshots, keep guides in shared libraries, and deploy settings with Group Policy or the MSI. Nothing leaves your PC.
+Moniker: amluto-steps
+Tags:
+- documentation
+- guides
+- how-to
+- screenshots
+- step-recorder
+- steps-recorder
+- training
+ReleaseNotes: |-
+  - **Contents and document-control pages** in PDF and Word exports. Tick them under "Before the steps" in the export review: contents lists each section (from your header blocks) with its steps and, in a PDF, its page; document control lists the owner, dates, review date and saved versions.
+  - **"Original" screenshot quality**, in Settings > Recording: every pixel, at your screen's full size, in files several times larger. Balanced stays the default.
+  - **"Add a step when you switch apps"**, in Settings > Recording, is on unless you switch it off.
+  - **The web page's camera** eases into a zoomed-in click ("Zoom in on each click"), from a slightly wider view.
+  - **Not personal stays not personal.** A suggestion you mark that way isn't suggested again, even after you close the guide, and the export review no longer counts it.
+  - Fixed: typing a web address made several "Type" steps before the "Go to". Now it's just the "Go to", which keeps only the site, never the rest of the address.
+  - Fixed: in the export review, the Export button could be out of view below the checklist, and the checklist could scroll sideways.
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
