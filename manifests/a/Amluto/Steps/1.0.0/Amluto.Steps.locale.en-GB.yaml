@@ -1,0 +1,61 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Amluto.Steps
+PackageVersion: 1.0.0
+PackageLocale: en-GB
+Publisher: Amluto Solutions Ltd
+PublisherUrl: https://steps.amluto.com/
+PublisherSupportUrl: https://steps.amluto.com/it/
+PrivacyUrl: https://privacy.amluto.com/
+Author: Amluto Solutions Ltd
+PackageName: Steps by Amluto
+PackageUrl: https://steps.amluto.com/
+License: Proprietary
+Copyright: © 2026 Amluto Solutions Ltd
+ShortDescription: Record a task click by click and turn it into a branded step-by-step guide.
+Description: Steps records clicks and screenshots while you work, then turns them into an editable step-by-step guide you can export as PDF, Word or an interactive walkthrough. Blur, crop and annotate the screenshots, keep guides in shared libraries, and deploy settings with Group Policy or the MSI. Nothing leaves your PC.
+Moniker: amluto-steps
+Tags:
+- documentation
+- guides
+- how-to
+- screenshots
+- step-recorder
+- steps-recorder
+- training
+ReleaseNotes: |-
+  - **Steps in 38 languages.** It follows the language Windows uses, or choose one in Settings > General > Language. The translations were made automatically: spotted a mistake? Tell us at steps@amluto.com. The setup speaks your language too.
+  - **Language tone:** steps can read Casual (as before), Plain language or Formal. Choose the tone for new recordings in Settings > Recording, or change a guide's under Language and tone in its menu.
+  - **Guides in several languages.** Pick a language under Showing in the editor: recorded steps are worded in it for you, and anything you write yourself (the title, notes, blocks) can be written in it beside the original. Library search finds the words in any of a guide's languages.
+  - **Export in any language.** Choose the language in the export review; for PDF and Word, More languages makes a file for each. A web page export carries every language and opens in each reader's own, with a list to switch.
+  - **Select several guides** in the library to move, copy, merge, export or send to the Bin together, across libraries. **Merge** makes one guide from several, from any library. **Copy to** puts a copy in another library (its versions and comments stay with the original).
+  - **Save to any library:** the arrow beside Save on a new recording.
+  - **In the Bin:** Delete for good, and Empty Bin.
+  - The setup's message when Steps is open is clearer, and says your guides are already saved.
+  - **Keyboard shortcuts:** when another copy of Steps holds one, Settings says so. Fixed: changing one shortcut hid the warning on others that another app uses.
+  - Guides saved by a later version of Steps keep that version's extra details when you edit them in this one.
+  - **Better step names.** Clicks in Windows' own apps (File Explorer, Notepad, Settings) are named after what you clicked, and a click no app names is named from the words on screen at that spot.
+  - **Typing:** pastes are recorded, each spreadsheet cell is its own step (in LibreOffice too), and "Open" steps come once per app, with a screenshot.
+  - **Privacy:**
+    - A password typed into a box that doesn't say it's one stays out of the guide when the window is titled for a password.
+    - Typing into something Steps can't name keeps its text out unless you turn on "Show typing into unnamed boxes".
+    - The export review warns about values that look like passwords.
+    - Other apps' windows lying over the one you click in are greyed out of screenshots.
+    - Hiding a typed value finds it however the wording was edited.
+    - Restoring a backup, or importing a settings file, asks first when it would add a library, change where recordings are saved, or record more (an app taken off your excluded list, typing recorded from the start), and lists each change.
+    - Text a password manager copies is never read as a paste, and an answer typed at a terminal prompt that asks for a token or password makes no step.
+    - In Steps for Chrome, a click on a tab you switch away from at once is left out rather than shown on the other tab's screenshot, a site you exclude stays excluded in the blank frames its editors use, and a page can't move where a click inside one of its frames is shown.
+  - **Blur suggestions: Light, Standard or Thorough**, in Settings > Privacy. Standard now finds your own account names; Thorough also finds file names and paths. Always-blur words are found however they're split or punctuated.
+  - **One Steps at a time:** opening it again brings the open one forward.
+  - **Pause and Stop in the main window** while recording, and the recording bar opens at the top centre.
+  - Keys are named as your keyboard names them (Strg in German), search ignores accents, and questions appear in Steps' own dialogs.
+  - Fixed: the language tone chosen in Settings wasn't used for new recordings; extra export languages didn't warn about untranslated text; Chinese and emoji printed as boxes in PDFs; PDF pages were left half empty; moving a guide left a copy in the Bin; the tour could seem to vanish.
+  - Fixed: the Contents page box in the export review couldn't be ticked; it's now offered only when the guide has header blocks.
+  - **Screens are named as Windows names them** in Settings, Recording, Monitors ("Screen 1, main: DELL U2720Q"), and when clicks on a screen you left out made no steps, Steps says so.
+  - **Dates are typed and shown your language's way**, such as the Review by date (dd/mm/yyyy in English).
+  - The setup is in Steps' colours.
+  - Fixed: the last characters of a PIN typed just before clicking elsewhere could be recorded as typed into the next box; Pause, Resume and Stop in the main window didn't work; a guide's "Edited" time ignored changes to its steps; moving one guide to another library couldn't be undone; help texts named keys in English where your keyboard says Strg, Maj or Suppr.
+  - Fixed: opening a menu in Notepad and other Windows apps was recorded as "Click "Close""; a file name typed into Save As could make two steps; a window that only flashed up, or the one left in front when you stopped, made an "Open" step; a choice in a drop-down list now reads "Choose" rather than "Type".
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0

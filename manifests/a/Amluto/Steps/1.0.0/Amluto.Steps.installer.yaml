@@ -1,0 +1,34 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: Amluto.Steps
+PackageVersion: 1.0.0
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.17763.0
+UpgradeBehavior: install
+Installers:
+- Architecture: x64
+  InstallerType: nullsoft
+  Scope: user
+  InstallerUrl: https://steps.amluto.com/download/amluto-steps-1.0.0-x64-setup.exe
+  InstallerSha256: CD634DDD800A5B8CF6E2AE2E8805483BF9BA8D7D017E668773DB7DB2D2E7A050
+  ProductCode: Steps
+  AppsAndFeaturesEntries:
+  - DisplayName: Steps
+    Publisher: Amluto Solutions Ltd
+    ProductCode: Steps
+- Architecture: x64
+  InstallerType: wix
+  Scope: machine
+  InstallerUrl: https://steps.amluto.com/download/amluto-steps-1.0.0-x64.msi
+  InstallerSha256: D437E4A91CCFD108EFFF3E23404EA441C0CADD46A5E832D3F47F8501B757220E
+  ProductCode: '{C2C98B4E-D6EB-4785-9CC2-824FC85BAFA3}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Steps
+    Publisher: Amluto Solutions Ltd
+    ProductCode: '{C2C98B4E-D6EB-4785-9CC2-824FC85BAFA3}'
+    UpgradeCode: '{A8772EA5-E41C-5D68-862D-0BE9828A10A7}'
+ManifestType: installer
+ManifestVersion: 1.10.0
+ReleaseDate: 2026-10-02
